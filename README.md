@@ -57,3 +57,48 @@ const targetDate = new Date("2025-06-10T15:30:00");
 // December 25, 2025 at noon
 const targetDate = new Date("2025-12-25T12:00:00");
 ```
+
+**⚠️ Common Mistakes:**
+- ❌ `2025-1-5` → ✅ `2025-01-05` (always 2 digits)
+- ❌ `2025/12/25` → ✅ `2025-12-25` (use dashes, not slashes)
+- ❌ Missing T → ✅ Must have `T` between date and time
+
+---
+
+### 2. Names & Message
+
+**File:** `src/components/MessageCard.jsx` (Lines 17-28)
+
+```javascript
+const recipientName = "Divyanshi";
+const senderName = "Ashmit";
+const message = `Your message here...`;
+```
+
+---
+
+### 3. Photos
+
+Add 6 photos to `public/images/` named: `pic1.jpg` to `pic6.jpg`
+
+---
+
+### 4. Music (Optional)
+
+Replace `public/music.mp3` with your song
+
+---
+
+## ��� Test Your Changes
+
+### Using the Test Button
+
+There's a special **"��� Test Celebration"** button on the countdown page that lets you skip the timer instantly!
+
+**What it does:**
+- ✅ Skips countdown timer
+- ✅ Shows birthday celebration page immediately
+- ✅ Lets you preview everything (confetti, message, gallery, music)
+- ✅ Perfect for testing before the big day!
+
+**How to use:**
