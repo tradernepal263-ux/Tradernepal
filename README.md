@@ -205,3 +205,21 @@ Refresh page (Ctrl + R)
 **Before going live:** Delete test button from `Countdown.jsx` (lines 95-101)
 
 ### Vercel
+1. Push to GitHub
+2. [vercel.com](https://vercel.com) → Import → Deploy
+
+### Netlify
+1. `npm run build`
+2. [netlify.com](https://netlify.com) → Drag `dist` folder
+
+---
+
+## ��� Issues?
+
+- **Photos not showing?** Check names (`pic1.jpg`) and location (`public/images/`)
+- **Music not playing?** Named `music.mp3` in `public/` folder, MP3 format only
+- **Countdown stuck?** See "Clear Browser Storage" section above
+
+---
+
+**Made with ❤️**
