@@ -138,3 +138,70 @@ There's a special **"��� Test Celebration"** button on the countdown page 
 ```
 
 **How to delete:**
+1. Open `src/components/Countdown.jsx`
+2. Find lines 95-101 (they have the warning comments)
+3. Select all these lines
+4. Press Delete
+5. Save the file
+
+**Why remove it:**
+- She might accidentally click it
+- Ruins the surprise of waiting for the countdown
+- Makes the site look more professional
+
+---
+
+### Clear Browser Storage (If Countdown Gets Stuck)
+
+After testing with the test button, the countdown might stay on the celebration page even after refreshing. Here's how to reset it:
+
+**Step-by-step instructions:**
+
+1. **Open Developer Tools:**
+   - Press `F12` on your keyboard
+   - OR right-click anywhere on the page → click "Inspect"
+
+2. **Go to Storage Area:**
+   - Click the **"Application"** tab (Chrome/Edge)
+   - OR click **"Storage"** tab (Firefox)
+
+3. **Find Local Storage:**
+   - In the left sidebar, look for "Local Storage"
+   - Click the ▶ arrow to expand it
+   - Click on `http://localhost:5173`
+
+4. **Delete the Data:**
+   - You'll see a row with key: `birthdayReached`
+   - Right-click on it
+   - Click "Delete"
+
+5. **Refresh the Page:**
+   - Press `Ctrl + R` (or `Cmd + R` on Mac)
+   - The countdown should appear again!
+
+**Visual Guide:**
+```
+Developer Tools (F12)
+    ↓
+Application/Storage Tab
+    ↓
+Local Storage → http://localhost:5173
+    ↓
+Right-click "birthdayReached" → Delete
+    ↓
+Refresh page (Ctrl + R)
+```
+<img width="1919" height="868" alt="image" src="https://github.com/user-attachments/assets/f0e3e12d-0b69-4a15-a571-7577594e0b5d" />
+
+**When to do this:**
+- After clicking the test button and wanting to see the countdown again
+- If the celebration page won't go back to countdown
+- When testing multiple times during development
+
+---
+
+## ��� Deploy
+
+**Before going live:** Delete test button from `Countdown.jsx` (lines 95-101)
+
+### Vercel
